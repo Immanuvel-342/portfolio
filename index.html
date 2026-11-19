@@ -177,6 +177,7 @@ section{max-width:1140px;margin:0 auto;padding:110px 6vw 40px}
 .hud-tip{color:var(--sky);border-left:1px solid var(--border);padding-left:12px}
 
 /* Unique Section Headers */
+h1,h2,h3,h4{text-transform:uppercase}
 h2{
   font-family:'Syne',sans-serif;
   font-size:clamp(1.65rem,3.5vw,2.3rem);
@@ -257,11 +258,16 @@ h2::before{content:'0' counter(sec) '.';counter-increment:sec;color:var(--amber)
 
 .card{
   background:var(--surface);border:1px solid var(--border);
-  border-radius:14px;padding:24px;backdrop-filter:blur(10px);
+  border-radius:14px;padding:20px 22px;backdrop-filter:blur(10px);
   transform-style:preserve-3d;
   transition:transform .18s ease,border-color .25s,box-shadow .25s,background .25s;
   will-change:transform;
 }
+#skills .grid.two{gap:16px}
+#skills .card h3{font-size:1.04rem;margin-bottom:6px}
+#skills .chips{gap:6px;margin-top:10px}
+#skills .chip{font-size:.73rem;padding:3px 8px}
+#skills .card p{font-size:.86rem;margin-top:.6em}
 .card:hover{
   background:var(--surface-hover);
   border-color:rgba(56,189,248,0.55);
@@ -586,13 +592,13 @@ footer{
   </section>
 
   <section id="about">
-    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/></svg>about</h2>
+    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/></svg>ABOUT</h2>
     <div class="about-wrap rv">
       <div class="manifesto">
         <span class="manifesto-kicker">// ENGINEER MANIFESTO</span>
-        <h3>Building infrastructure that <span>scales under pressure</span> and heals itself.</h3>
-        <p>I’m <strong>Immanuvel</strong>, 22, a final-year B.Tech IT undergraduate at <strong>Rrase College of Engineering (Class of 2026)</strong>, sharpening my production engineering craft at <strong>Compunet Connections</strong>.</p>
-        <p>Instead of just memorizing cloud theory, I build end-to-end systems—designing isolated multi-AZ VPCs, configuring Application Load Balancers, hardening private RDS tiers, and automating container deployments with Docker and Jenkins.</p>
+        <h3>BUILDING INFRASTRUCTURE THAT <span>SCALES UNDER PRESSURE</span> AND HEALS ITSELF.</h3>
+        <p>I’m <strong>Immanuvel</strong> (22), a final-year B.Tech IT student at <strong>Rrase College of Engineering (2026)</strong>, training in Cloud &amp; DevOps at <strong>Compunet Connections</strong>.</p>
+        <p>I design multi-AZ AWS VPCs, ALBs, private RDS tiers, and automated Docker/Jenkins CI/CD pipelines.</p>
       </div>
 
       <div class="spec-box">
@@ -607,78 +613,72 @@ footer{
     <div class="tl rv">
       <div class="it">
         <div class="when">2026</div>
-        <h3>B.Tech Information Technology — Rrase College of Engineering</h3>
-        <p>Final year undergraduate focusing on distributed systems, cloud networking, and Linux internals.</p>
+        <h3>B.TECH IT — RRASE COLLEGE OF ENGINEERING</h3>
+        <p>Cloud networking, distributed systems, and Linux.</p>
       </div>
       <div class="it">
         <div class="when">CURRENT</div>
-        <h3>Cloud &amp; DevOps Engineering Trainee — Compunet Connections</h3>
-        <p>Daily hands-on implementation of AWS core infrastructure, CI/CD automation, and containerized workloads.</p>
-      </div>
-      <div class="it">
-        <div class="when">NEXT MILESTONE</div>
-        <h3>AWS SAA-C03 &amp; Serverless Container Orchestration</h3>
-        <p>Advancing toward AWS Solutions Architect certification and automated ECS Fargate deployments.</p>
+        <h3>CLOUD &amp; DEVOPS TRAINEE — COMPUNET CONNECTIONS</h3>
+        <p>Hands-on AWS infrastructure, CI/CD, and containers.</p>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>skills</h2>
+    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>SKILLS</h2>
     <div class="grid two rv">
       <div class="card">
         <span class="tag">aws core</span>
-        <h3>Cloud Infrastructure (AWS)</h3>
+        <h3>CLOUD INFRASTRUCTURE (AWS)</h3>
         <div class="chips">
           <span class="chip">EC2</span><span class="chip">VPC</span><span class="chip">S3</span>
           <span class="chip">IAM</span><span class="chip">ALB</span><span class="chip">RDS MySQL</span>
-          <span class="chip">Route 53</span><span class="chip">ACM</span><span class="chip">Security Groups</span>
+          <span class="chip">Route 53</span><span class="chip">Security Groups</span>
         </div>
-        <p>Designing fault-tolerant cloud environments aligned with AWS Well-Architected principles.</p>
+        <p>Scalable, fault-tolerant AWS setups.</p>
       </div>
 
       <div class="card">
         <span class="tag sky">architecture</span>
-        <h3>Networking &amp; High Availability</h3>
+        <h3>NETWORKING &amp; HA</h3>
         <div class="chips">
           <span class="chip c">Custom VPC</span><span class="chip c">Public/Private Subnets</span>
-          <span class="chip c">IGW &amp; Route Tables</span><span class="chip c">Multi-AZ Failover</span>
-          <span class="chip c">Health Checks</span><span class="chip c">Layered Security</span>
-          <span class="chip c">Private DB Tier</span><span class="chip c">DNS &amp; HTTPS</span>
+          <span class="chip c">IGW &amp; Routes</span><span class="chip c">Multi-AZ</span>
+          <span class="chip c">Private DB</span><span class="chip c">HTTPS</span>
         </div>
-        <p>Isolating database tiers and balancing traffic across Availability Zones.</p>
+        <p>Multi-AZ traffic routing and DB isolation.</p>
       </div>
 
       <div class="card">
         <span class="tag em">devops stack</span>
-        <h3>Containers &amp; Automation</h3>
+        <h3>CONTAINERS &amp; AUTOMATION</h3>
         <div class="chips">
           <span class="chip">Docker</span><span class="chip">Jenkins</span>
-          <span class="chip">Git &amp; GitHub</span><span class="chip">CI/CD Pipelines</span>
-          <span class="chip">Linux Admin</span><span class="chip">Nginx</span><span class="chip">Apache</span>
+          <span class="chip">Git &amp; GitHub</span><span class="chip">Linux</span>
+          <span class="chip">Nginx</span><span class="chip">Apache</span>
         </div>
-        <p>Automating build, test, and deployment lifecycles on Linux environments.</p>
+        <p>Automated builds and Linux operations.</p>
       </div>
 
       <div class="card">
         <span class="tag">delivery</span>
-        <h3>CI/CD &amp; Container Workflows</h3>
+        <h3>CI/CD WORKFLOWS</h3>
         <div class="chips">
-          <span class="chip c">Dockerfile Optimization</span><span class="chip c">Amazon ECR</span>
-          <span class="chip c">Jenkinsfile</span><span class="chip c">GitHub Webhooks</span>
-          <span class="chip c">Rolling Deployments</span><span class="chip c">ECS Fargate</span>
+          <span class="chip c">Dockerfiles</span><span class="chip c">Amazon ECR</span>
+          <span class="chip c">Jenkinsfile</span><span class="chip c">Webhooks</span>
+          <span class="chip c">ECS Fargate</span>
         </div>
-        <p>Zero-downtime container rollouts triggered directly from source control commits.</p>
+        <p>Automated container rollouts on commit.</p>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>projects</h2>
+    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>PROJECTS</h2>
     <div class="grid rv">
       <div class="card">
         <span class="tag">3d architecture • aws</span>
-        <h3>Employee Management System Infra</h3>
+        <h3>EMPLOYEE MANAGEMENT SYSTEM INFRA</h3>
         <p>Multi-AZ AWS VPC with 2 Public &amp; 2 Private Subnets, Internet Gateway, Internet-facing ALB (HTTP/HTTPS with Let's Encrypt SSL), dual Nginx EC2 web servers across AZ1 &amp; AZ2, and a private RDS MySQL (:3306) tier isolated via chained Security Groups.</p>
         <div class="chips">
           <span class="chip">VPC</span><span class="chip">Public/Private Subnets</span><span class="chip">ALB</span>
@@ -692,7 +692,7 @@ footer{
 
       <div class="card">
         <span class="tag sky">in progress</span>
-        <h3>FreshBasket Cloud Commerce</h3>
+        <h3>FRESHBASKET CLOUD COMMERCE</h3>
         <p>Full-stack Flask e-commerce platform deployed on AWS EC2 compute instances with persistent relational storage on Amazon RDS MySQL and custom domain routing.</p>
         <div class="chips">
           <span class="chip">Flask</span><span class="chip">EC2</span><span class="chip">RDS MySQL</span><span class="chip">Linux</span>
@@ -702,7 +702,7 @@ footer{
 
       <div class="card">
         <span class="tag em">ci/cd pipeline</span>
-        <h3>FastAPI on ECS Fargate</h3>
+        <h3>FASTAPI ON ECS FARGATE</h3>
         <p>End-to-end automated pipeline: GitHub webhooks trigger Jenkins to build Docker images, push artifacts to Amazon ECR, and execute rolling deployments to serverless ECS Fargate behind an ALB.</p>
         <div class="chips">
           <span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">Jenkins</span>
@@ -716,7 +716,7 @@ footer{
       <div class="arch-showcase-header">
         <div class="arch-showcase-title">
           <span class="kicker">// INTERACTIVE 3D CLOUD TOPOLOGY</span>
-          <h3>Employee Management System — Multi-AZ AWS Infrastructure</h3>
+          <h3>EMPLOYEE MANAGEMENT SYSTEM — MULTI-AZ AWS INFRASTRUCTURE</h3>
         </div>
         <div class="arch-controls-pill">
           <button type="button" class="arch-ctrl-btn active" id="toggleFlowBtn">HTTPS Traffic: ON</button>
@@ -735,7 +735,7 @@ footer{
         </div>
 
         <div class="arch-sidebar">
-          <h4>Architecture &amp; Security Flow</h4>
+          <h4>ARCHITECTURE &AMP; SECURITY FLOW</h4>
           <div class="arch-step amb">
             <strong>1. Edge &amp; SSL (Ports 80 &rarr; 443)</strong>
             <span>Users hit <code>employee.example.com</code> via Internet Gateway. HTTP redirects to HTTPS (Let's Encrypt / Certbot) at the internet-facing ALB across Public Subnets.</span>
@@ -758,7 +758,7 @@ footer{
   </section>
 
   <section id="certifications">
-    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8.5 13l-1.5 9 5-3 5 3-1.5-9"/></svg>certifications</h2>
+    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8.5 13l-1.5 9 5-3 5 3-1.5-9"/></svg>CERTIFICATIONS</h2>
     <div class="grid two rv">
       <!-- Exact AWS Certificate Image Card -->
       <div class="card cert-card">
@@ -768,7 +768,7 @@ footer{
             <span class="zoom-pill">&#128269; click to zoom</span>
           </div>
           <span class="tag">aws training &amp; certification</span>
-          <h3>Getting Started with DevOps on AWS</h3>
+          <h3>GETTING STARTED WITH DEVOPS ON AWS</h3>
           <p>Awarded to <strong>Immanuvel S</strong> on November 08, 2026 — validating DevOps culture, CI/CD automation pipelines, and continuous delivery workflows on AWS.</p>
         </div>
         <div class="cert-meta">
@@ -787,7 +787,7 @@ footer{
             <span class="zoom-pill">&#128269; click to zoom</span>
           </div>
           <span class="tag sky">claude academy • badge</span>
-          <h3>AI Fluency: Framework and Foundations</h3>
+          <h3>AI FLUENCY: FRAMEWORK AND FOUNDATIONS</h3>
           <p>Presented to <strong>Immanuvel</strong> on November 08, 2026 — certifying structured AI fluency and LLM integration frameworks supporting Cloud AI &amp; MLOps.</p>
         </div>
         <div class="cert-meta">
@@ -802,7 +802,7 @@ footer{
   </section>
 
   <section id="contact">
-    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>contact</h2>
+    <h2><svg class="ico ico-sec" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>CONTACT</h2>
     <div class="contact-grid rv">
       <a class="contact-card" href="https://github.com/Immanuvel-342" target="_blank" rel="noopener">
         <div style="display:flex;align-items:center"><svg class="ico ico-ct" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-6.9A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.4a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.3 3.3 6.5 6.4 6.9a3.4 3.4 0 0 0-.9 2.6V22"/></svg><span>github</span> / Immanuvel-342</div>
